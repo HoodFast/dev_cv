@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const Logo = () => {
     return (
         <StyledA href="">
-            <Icon iconId={"homeSvg"} width={'53px'} height={'53px'} viewBox={'0.5 0 17 17'}/>
+            <Icon iconId={"homeSvg"} width={'53px'} height={'53px'} />
         </StyledA>
     );
 };
