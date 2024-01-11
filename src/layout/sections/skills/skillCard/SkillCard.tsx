@@ -32,7 +32,7 @@ const SkillText = styled.p`
     text-align: center;
 `
 const Container = styled.div`
-  width: 310px;
+  width: 30%;
   margin: 20px;
   background-color: #d5bcec;
 `

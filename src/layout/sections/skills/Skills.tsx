@@ -11,17 +11,17 @@ export const Skills = () => {
             <SectionTitle>
                 MySkills
             </SectionTitle>
-            <FlexWrapper justify='center'>
+            <FlexWrapper justify='center' wrap='wrap'>
                 <SkillCard
                     iconId='coding'
                     title=' web development'
                     description='Mobile app, website design'/>
                 <SkillCard
-                    iconId='coding'
+                    iconId='photographer'
                     title=' web development'
                     description='Mobile app, website design'/>
                 <SkillCard
-                    iconId='coding'
+                    iconId='ui/ux'
                     title=' web development'
                     description='Mobile app, website design'/>
                 <SkillCard
