@@ -4,6 +4,7 @@ import {FlexWrapper} from "../FlexWrapper";
 
 type TitleType = {
     children: React.ReactNode
+    description?:string
 }
 
 export const SectionTitle:FC<TitleType> = (props) => {
@@ -15,8 +16,7 @@ export const SectionTitle:FC<TitleType> = (props) => {
                 </Title>
 
                 <SectionDescription>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
-                    duis enim velit mollit. lorem ipsum
+                    {props.description}
                 </SectionDescription>
             </FlexWrapper>
         </Container>

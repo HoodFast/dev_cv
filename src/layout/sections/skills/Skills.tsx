@@ -8,7 +8,9 @@ import {SkillCard} from "./skillCard/SkillCard";
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle>
+            <SectionTitle
+                description='Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                Velit officia consequat duis enim velit mollit. lorem ipsum'>
                 MySkills
             </SectionTitle>
             <FlexWrapper justify='center' wrap='wrap'>

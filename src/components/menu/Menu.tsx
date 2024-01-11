@@ -1,25 +1,21 @@
-import React from 'react';
+import React, {FC} from 'react';
 import styled from "styled-components";
 
-export const Menu = () => {
+type MenuPropsType = {
+    menuItems: string[]
+}
+
+export const Menu: FC<MenuPropsType> = (props) => {
+
+    let menuData = props.menuItems.map((i, index) => {
+        return (
+            <li key={index}><a href="">{i}</a></li>
+        )
+    })
     return (
         <StyledMenu>
             <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Skills</a>
-                </li>
-                <li>
-                    <a href="">Works</a>
-                </li>
-                <li>
-                    <a href="">Testimony</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
+                {menuData}
             </ul>
         </StyledMenu>
     );
@@ -31,6 +27,5 @@ const StyledMenu = styled.nav`
     display: flex;
     align-items: center;
     gap: 50px;
-  
   }
 `
